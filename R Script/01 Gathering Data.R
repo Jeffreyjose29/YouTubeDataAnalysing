@@ -1,5 +1,5 @@
 # Package names
-packages <- c("dplyr", "ggplot2", "httr", "jsonlite")
+packages <- c("dplyr", "ggplot2", "httr", "jsonlite", "stringr")
 
 # Install packages not yet installed
 installed_packages <- packages %in% rownames(installed.packages())
@@ -16,7 +16,7 @@ key <- "<API_KEY>"
 channel_id <- "UCV0qA-eDDICsRR9rPcnG7tw"
 base <- "https://www.googleapis.com/youtube/v3/"
 
-outputDirectory <- "<OUTPUT_DIRECTORY>"
+outputDirectory <- "C:/Users/jeffr/OneDrive/Desktop/Github Activities/YouTubeDataAnalysing/Data Outputs"
 setwd(outputDirectory)
 
 # Construct the API call
