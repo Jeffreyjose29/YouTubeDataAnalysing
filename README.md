@@ -5,6 +5,20 @@
 
 The project is completed using R as the primary language and RStudio as the IDE of choice. 
 
+## Channel In Focus
+
+The channel used throughout this project is called **Joma Tech**. 
+
+![img](https://i.ytimg.com/vi/0oBi8OmjLIg/maxresdefault.jpg)
+
+Joma Tech is an educational and parody channel with the main focus centering around the field of computer science and software engineering 🖥️. Joma first created his channel back in August 31st 2016 and has uploaded 102 videos and amassed 145,736,829 views at the time of writing (7th September 2022). 
+
+He is currently based in the United States of America. 🇺🇸
+
+*Check out Joma Tech's Channel:* https://www.youtube.com/c/JomaOppa/featured  
+
+*Joma Tech Social Blade:* https://socialblade.com/youtube/channel/UCV0qA-eDDICsRR9rPcnG7tw
+
 ## Data Sources
 
 A large majority of the data used within this project is web-scraped using the Google YouTube API pass which allows an user to scrap the latest data on any social channel through the script itself.  
