@@ -23,6 +23,8 @@ video_final.df$ytPublishedDateTime <- gsub("Z","",as.character(video_final.df$yt
 video_final.df$ytPublishedTime <- format(as.POSIXct(video_final.df$ytPublishedDateTime), format = '%H:%M:%S')
 video_final.df$ytYearMonth <- format(video_final.df$ytPublishedDate, "%Y-%m")
 
+## Adding current datetime to channel dataframe
+channel.df$CurrentDate <- Sys.Date()
 
 ## Plots
 video_final.df %>%
