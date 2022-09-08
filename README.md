@@ -40,7 +40,7 @@ The YouTube Data API is part of the Google Cloud Platform and it is essential th
 ## Informational Reading Material
 
 **Title:** Sentiment Analysis on YouTube Comments to Predict YouTube Video Like Proportions  
-**Author:** Isac Lorentz & Gurjwan Singh
+**Author:** Isac Lorentz & Gurjwan Singh  
 **Link:** http://www.diva-portal.org/smash/get/diva2:1593439/FULLTEXT01.pdf 
 
 
