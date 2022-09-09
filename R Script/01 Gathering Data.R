@@ -1,5 +1,5 @@
 # Package names
-packages <- c("dplyr", "ggplot2", "httr", "jsonlite", "stringr")
+packages <- c("dplyr", "ggplot2", "httr", "jsonlite", "stringr", "SocialMediaLab", "SentimentAnalysis", "SnowballC")
 
 # Install packages not yet installed
 installed_packages <- packages %in% rownames(installed.packages())
@@ -11,7 +11,7 @@ if (any(installed_packages == FALSE)) {
 invisible(lapply(packages, library, character.only = TRUE))
 
 # Key
-key <- "<API_KEY>"
+key <- "AIzaSyCaW7QZabAS7X8H0HVnWmMSNvZfxw2Wkf0"
 
 channel_id <- "UCV0qA-eDDICsRR9rPcnG7tw"
 base <- "https://www.googleapis.com/youtube/v3/"
