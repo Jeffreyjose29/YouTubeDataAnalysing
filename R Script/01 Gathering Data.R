@@ -11,7 +11,7 @@ if (any(installed_packages == FALSE)) {
 invisible(lapply(packages, library, character.only = TRUE))
 
 # Key
-key <- "AIzaSyCaW7QZabAS7X8H0HVnWmMSNvZfxw2Wkf0"
+key <- "<API_KEY>"
 
 channel_id <- "UCV0qA-eDDICsRR9rPcnG7tw"
 base <- "https://www.googleapis.com/youtube/v3/"
