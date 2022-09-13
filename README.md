@@ -35,7 +35,27 @@ YouTube shares information through their product, the <a href = "https://develop
 
 The YouTube Data API is part of the Google Cloud Platform and it is essential that in order to legally extract data from YouTube, you would be required to sign-up for a **Google Cloud Account**, using your **Google Account**.
 
-*Link to creating your YouTube API*: https://console.cloud.google.com/apis/api/youtube.googleapis.com/metrics?project=digiinnovations-214009 
+*Link to creating your YouTube API*: https://console.cloud.google.com/apis/api/youtube.googleapis.com/metrics?project=digiinnovations-214009  
+
+## Step 2: Install R
+
+R is a tool for data science, visualization, automating data processes and many other data operations. 
+
+Installers for Windows, Mac and Linux can be installed from their <a href = "https://cran.r-project.org/mirrors.html">official site</a>.
+
+### Packages: httr, jsonlite and dplyr packages
+
+Once you have installed R, you need to install 3 additional packages: `httr`, `jsonlite`, and `dplyr`.   
+
+The `httr` package allows us to communicate with the API and get the raw data from YouTube in JSON format.
+
+Afterwards, the `jsonlite` package takes this raw data and transforms it into a readable format.
+
+The `dplyr` is an all-around package for manipulating data in R.
+
+Live streaming videos do not count views. In some videos, comments are disabled. Since videos in YouTube can have different properties, some results are not consistent with the others.
+
+Instead of `rbind`, we can use `bind_rows` in `dplyr` to handle binding data with mismatched columns.
 
 ## Informational Reading Material
 
