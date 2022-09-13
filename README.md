@@ -55,7 +55,14 @@ The `dplyr` is an all-around package for manipulating data in R.
 
 Live streaming videos do not count views. In some videos, comments are disabled. Since videos in YouTube can have different properties, some results are not consistent with the others.
 
-Instead of `rbind`, we can use `bind_rows` in `dplyr` to handle binding data with mismatched columns.
+Instead of `rbind`, we can use `bind_rows` in `dplyr` to handle binding data with mismatched columns.  
+
+## Step 3: Source Code To Extract Video Information  
+
+Below is a step process into extracting YouTube data in R.  
+YouTube data can be categorized by emphasizing either the **channel id** or the **user id**.  
+
+Follow the documented step in <a href = "https://github.com/Jeffreyjose29/YouTubeDataAnalysing/blob/main/R%20Script/01%20Gathering%20Data.R">01_Extracting_Data.R</a> for sample code.
 
 ## Informational Reading Material
 
