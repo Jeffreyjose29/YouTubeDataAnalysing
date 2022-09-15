@@ -30,8 +30,9 @@ channel.df$CurrentDate <- Sys.Date()
 video_final.df %>%
   group_by(ytChannelName, ytYearMonth) %>%
   summarise(ytSumOfViews = sum(as.integer(ytViewsCount))) %>%
-  ggplot(aes(x = ytYearMonth, y = ytSumOfViews, group = ytChannelName, colour = ytChannelName)) + geom_line(size = 2) + geom_point() +
+  ggplot(aes(x = ytYearMonth, y = ytSumOfViews, group = ytChannelName, colour = ytChannelName)) + geom_line(size = 0.5) + geom_point() +
   labs(x = "Year-Month", y = "Num. Views", title = "Number Of Viewers For Videos Released Each Year-Month") +
+  scale_x_discrete(guide = guide_axis(angle = 90)) + labs(color = "YouTube Channel:") +
   theme_light()
 
 ## Top 10 videos with highest views
