@@ -33,7 +33,10 @@ video_final.df %>%
   ggplot(aes(x = ytYearMonth, y = ytSumOfViews, group = ytChannelName, colour = ytChannelName)) + geom_line(size = 0.5) + geom_point() +
   labs(x = "Year-Month", y = "Num. Views", title = "Number Of Viewers For Videos Released Each Year-Month") +
   scale_x_discrete(guide = guide_axis(angle = 90)) + labs(color = "YouTube Channel:") +
-  theme_light()
+  theme_light() + scale_colour_manual(values = c(rgb(153, 3, 30, max = 255), 
+                                             rgb(227, 100, 20, max = 255),
+                                             rgb(15, 76, 92, max = 255)
+  ))
 
 ## Top 10 videos with highest views
 video_final.df %>%
@@ -44,4 +47,7 @@ video_final.df %>%
   ggplot(aes(x = reorder(ytTitle, -ytViewsCount), y = ytViewsCount, group = ytChannelName, fill = ytChannelName)) + geom_bar(stat = "identity", colour = 'black') +
   scale_x_discrete(guide = guide_axis(angle = 90)) +
   labs(x = "Video Title", y = "Num. Views", title = "Top 15 Videos With The Highest Views", fill = "Channel Name:") + 
-  theme_light()
+  theme_light() + scale_fill_manual(values = c(rgb(15, 76, 92, max = 255), 
+                                               rgb(227, 100, 20, max = 255),
+                                               rgb(153, 3, 30, max = 255)
+  ))
