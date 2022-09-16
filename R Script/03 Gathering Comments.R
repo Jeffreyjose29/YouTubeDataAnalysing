@@ -7,6 +7,8 @@ videoIds <- as.data.frame(video_final.df$ytVideoID)
 videoIds <- unique(videoIds$`video_final.df$ytVideoID`)
 videoIds <- as.data.frame(videoIds)
 colnames(videoIds)[1] <- "videoId"
+videoIds <- videoIds %>%
+  filter(videoId != "YBYI7E2PqWE")
 
 comments_all <- data.frame()
 for(i in 1:nrow(videoIds)){

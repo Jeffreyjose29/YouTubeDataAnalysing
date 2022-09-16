@@ -1,6 +1,5 @@
 # Package names
-packages <- c("dplyr", "ggplot2", "httr", "jsonlite", "stringr", "SocialMediaLab", "SentimentAnalysis", "SnowballC", "textclean", 
-              "tm", "wordcloud", "syuzhet", "tidyr")
+packages <- c("dplyr", "ggplot2", "httr", "jsonlite", "stringr", "SocialMediaLab", "SentimentAnalysis", "SnowballC")
 
 # Install packages not yet installed
 installed_packages <- packages %in% rownames(installed.packages())
