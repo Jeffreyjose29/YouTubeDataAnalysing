@@ -55,3 +55,4 @@ video_final.df %>%
 
 # Write out the dataframe to .csv format
 write.csv(video_final.df, "videoFinal.csv", row.names = FALSE)
+write.csv(channel.df, "channelInfo.csv", row.names = FALSE)
