@@ -51,3 +51,7 @@ video_final.df %>%
                                                rgb(227, 100, 20, max = 255),
                                                rgb(153, 3, 30, max = 255)
   ))
+
+
+# Write out the dataframe to .csv format
+write.csv(video_final.df, "videoFinal.csv", row.names = FALSE)
